@@ -13,23 +13,23 @@ int main(){
   long b;
   long c;
   a = NUMBER;
-  b = 2;
-  c = -9999;
+  b = 2; //start at 2
+  c = -9999; //largest
   while(1){
-    if(a % b == 0){
-      a = a/b;
+    if(a % b == 0){ //if you can divide it
+      a = a/b; // do it
       //cout << "Factors: " << b;
-      if(b > c){
+      if(b > c){ // if the number is greater than the largest so far
       c= b;
 
       }
-      b = 2;
+      b = 2; //reset b
     }
     else{
-      b++;
+      b++; //if not divisible, increment b to try again
     }
     if(a == 1){
-      break;
+      break; //if a is broken all the way down, break;
     }
   }
   cout << endl;

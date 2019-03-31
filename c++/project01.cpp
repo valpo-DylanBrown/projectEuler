@@ -11,8 +11,8 @@ using namespace std;
 int main(){
   int sum;
   for(int i = 1; i<ENDING; i++){
-    if((i % 3 == 0) || (i % 5 == 0)){
-      sum += i;
+    if((i % 3 == 0) || (i % 5 == 0)){ //check for divisible by 5 or 3
+      sum += i; // add it to the sum
     }
   }
   cout << "Sum from 0 to " << ENDING << " is " << sum << endl;
