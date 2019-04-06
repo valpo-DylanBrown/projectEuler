@@ -14,13 +14,6 @@ Find the product abc.
 using namespace std;
 #define TARGET 1000;
 
-float findThird(int a, int b){
-  float c;
-  float c2 = pow(a,2)+pow(b,2);
-  c = sqrt(c2);
-  return c;
-}
-
 int main(){
   int t1, t2, t3;
   const int sum = 1000;
